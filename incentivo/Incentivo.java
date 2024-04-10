@@ -14,7 +14,7 @@ public class Incentivo {
         boolean tiene_incentivo;
         //definir variable de entrada
         short unidades;
-        System.out.println("Proporcione unidades semanales producidas: ");
+        System.out.print("Proporcione unidades semanales producidas: ");
         unidades = teclado.nextShort();
         if (unidades>100) {
             tiene_incentivo = true;
@@ -24,7 +24,7 @@ public class Incentivo {
         }
         System.out.println("Tiene incentivo "+tiene_incentivo);
         teclado.close();
-        
+
     }
 
     
