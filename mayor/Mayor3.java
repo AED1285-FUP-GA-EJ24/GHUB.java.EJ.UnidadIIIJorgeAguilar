@@ -1,6 +1,6 @@
 package mayor;
 import java.util.Scanner;
-public class Mayor{
+public class Mayor3{
     public void mayor(){
         //declarar el objeto Scanner
         Scanner entrada = new Scanner(System.in);
@@ -11,20 +11,17 @@ public class Mayor{
         a = entrada.nextInt();
         b = entrada.nextInt();
         c = entrada.nextInt();
-        if(a>b){
-            if(a>c){
-                System.out.println("El mayor es: " +a);
+        if (a>b && a>c){
+            System.out.println("El mayor es: "+a);
+        }
+        else{
+            if (b>a && b>c){
+            System.out.println("El mayor es: "+b);
             }
             else{
                 System.out.println("El mayor es: "+c);
             }
-        }else{
-            if(b>c){
-                System.out.println("El mayor es: "+b);
-            }else{
-                System.out.println("El mayor es: "+c);
-            }
         }
+        entrada.close();
     }
-
 }
