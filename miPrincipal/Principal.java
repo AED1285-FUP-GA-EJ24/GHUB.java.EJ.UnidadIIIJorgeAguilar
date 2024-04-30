@@ -10,9 +10,13 @@ import menorde3.Menorde3;
 import peaje.Peaje;
 import tipoTriangulo.Triangulo;
 import romano.Romano;
+import sumaPares.SumaPares;
 import vocal.Vocal;
 import calificaciones.Calificacion;
 import demoFor.DemoFor;
+import demoIfAnidado.DemoIfAnidado;
+import demoOpTernario.DemoOpTernario;
+import multiplicar.Multiplicar;
 public class Principal {
     
     public static void main(String[] args) {
@@ -32,7 +36,11 @@ public class Principal {
         System.out.println("* 9) Determinar Tipo de Calificación  ");
         System.out.println("*10) Seleccionar Tipo Tarifa          ");
         System.out.println("*11) Determinación de Bono            ");
-        System.out.println("*12) Demo For                         ");
+        System.out.println("*12) Formas de If anidado             ");
+        System.out.println("*13) Operador Ternario ?:             ");     
+        System.out.println("*14) Demo For                         ");
+        System.out.println("*15) Suma los M primeros búmero pares ");
+        System.out.println("*16) Tabla Mutiplicar con argumentos  ");
         System.out.println("**************************************");
         System.out.print("Seleccion Opcion:");
         opcion = entrada.nextInt();
@@ -82,10 +90,27 @@ public class Principal {
              objBono.bono();
              break;
             case 12:
+              DemoIfAnidado objDemoIfAnidado = new DemoIfAnidado();
+              objDemoIfAnidado.demoIfAnidado();
+              break;
+            case 13:
+              DemoOpTernario objOpTer = new DemoOpTernario();
+              objOpTer.demoOpTernario();
+              break;
+            case 14:
              DemoFor objDemoFor = new DemoFor();
              objDemoFor.demofor();
              break;
-             
+            case 15:
+             SumaPares objSumaPares = new SumaPares();
+             objSumaPares.sumaPares();
+             break;
+            case 16:
+             Multiplicar objMult = new Multiplicar();
+             System.out.println("Proporciona número para generar tabla:");
+             int n = entrada.nextInt();
+             objMult.multiplicar(n);
+             break;
             default:
               System.out.println("Opción inválida");
         }
