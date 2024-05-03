@@ -16,7 +16,9 @@ import calificaciones.Calificacion;
 import demoFor.DemoFor;
 import demoIfAnidado.DemoIfAnidado;
 import demoOpTernario.DemoOpTernario;
+import demoWhile.DemoWhile;
 import multiplicar.Multiplicar;
+import calorias.Calorias;
 public class Principal {
     
     public static void main(String[] args) {
@@ -41,6 +43,8 @@ public class Principal {
         System.out.println("*14) Demo For                         ");
         System.out.println("*15) Suma los M primeros búmero pares ");
         System.out.println("*16) Tabla Mutiplicar con argumentos  ");
+        System.out.println("*17) Demo ciclo while                 ");
+        System.out.println(" 18) Calculo de Calorias              ");
         System.out.println("**************************************");
         System.out.print("Seleccion Opcion:");
         opcion = entrada.nextInt();
@@ -111,6 +115,14 @@ public class Principal {
              int n = entrada.nextInt();
              objMult.multiplicar(n);
              break;
+            case 17:
+              DemoWhile objdw = new DemoWhile();
+              objdw.demoWhile();
+              break;
+            case 18:
+              Calorias objCal= new Calorias();
+              objCal.calorias();
+              break;
             default:
               System.out.println("Opción inválida");
         }
