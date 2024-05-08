@@ -20,6 +20,8 @@ import demoWhile.DemoWhile;
 import multiplicar.Multiplicar;
 import calorias.Calorias;
 import promedio2.Promedio;
+import ecuacion.Ecuacion;
+import leerX.LeerX;
 public class Principal {
     
     public static void main(String[] args) {
@@ -46,7 +48,9 @@ public class Principal {
         System.out.println("*16) Tabla Mutiplicar con argumentos  ");
         System.out.println("*17) Demo ciclo while                 ");
         System.out.println(" 18) Calculo de Calorias              ");
-        System.out.println(" 19) Promedio Calificaciones           ");
+        System.out.println(" 19) Promedio Calificaciones          ");
+        System.out.println("*20) Calcular ecuacion                ");
+        System.out.println("*21) Leer valor de x e imprimir y     ");
         System.out.println("**************************************");
         System.out.print("Seleccion Opcion:");
         opcion = entrada.nextInt();
@@ -129,6 +133,15 @@ public class Principal {
               Promedio objProm = new Promedio();
               objProm.promedio();
               break;
+            case 20:
+              Ecuacion objEcu = new Ecuacion();
+              objEcu.ecuacion();
+              break;
+            case 21:
+              LeerX objLeerX = new LeerX();
+              objLeerX.leerX();
+              break;
+              
               
             default:
               System.out.println("Opción inválida");
